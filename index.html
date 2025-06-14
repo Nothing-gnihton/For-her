@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My First Website</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f9f9f9;
+      text-align: center;
+      padding-top: 100px;
+      color: #333;
+    }
+    h1 {
+      font-size: 2.5em;
+      color: #444;
+    }
+    button {
+      margin-top: 30px;
+      padding: 12px 24px;
+      font-size: 1.1em;
+      background-color: #ff69b4;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+    button:hover {
+      background-color: #e754a6;
+    }
+    #message {
+      margin-top: 40px;
+      font-size: 1.2em;
+      color: #555;
+      max-width: 600px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Hello world, this is my first live website.</h1>
+
+  <button onclick="showMessage()">Click Me</button>
+
+  <div id="message"></div>
+
+  <script>
+    function showMessage() {
+      const msg = "God bless the dinosaurs who died to make the fuel that powered the car that brought your mom to the hospital to give birth to you on 10th November 2008 (Monday). 💖";
+      document.getElementById('message').innerText = msg;
+    }
+  </script>
+
+</body>
+</html>
